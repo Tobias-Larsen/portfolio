@@ -12,6 +12,7 @@ html {
 body {
     margin: 0; /* Ingen kanter i siden af browser */
     font-family: Arial, sans-serif;
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,6 +55,7 @@ img {
     left: 8vmin;
     text-decoration: none;
     transition: 0.1s;
+    z-index: 100;
 }
 
 .logo:hover{
@@ -69,6 +71,7 @@ img {
     margin-top: 7.4666vmin;
     margin-right: 7.2vmin;
     cursor: pointer;
+    z-index: 100;
 }
 
 .burgerLineContainer{
@@ -221,6 +224,70 @@ img {
 
 @media screen and (min-width: 568px){
     .logo{
+        font-size: 2.68vw;
+        top: 3.685vw;
+        left: 5.86vw;
+    }
+
+    .menuClick{
+        width: 2.68vw;
+        height: 2vw;
+        margin-top: 4.188vw;
+        margin-right: 5.86vw;
+    }
+
+    .burgerLine{
+        width: 2.68vw;
+        height: 0.34vw;
+    }
+
+    .burgerLine:before, .burgerLine:after{
+        height: 0.34vw;
+    }
+
+    .burgerLine:before{
+        top: -0.84vw;
+    }
+
+    .burgerLine:after{
+        top: 0.84vw;
+    }
+
+    .burgerMenu{
+        width: 360px;
+        height: 100vh;
+        margin-right: -360px;
+    }
+
+    .crossClick{
+        width: 34px;
+        height: 34px;
+        margin: 65px 64px 0 0;
+    }
+
+    .crossLine{
+        width: 34px;
+        height: 3px;
+    }
+
+    .crossLine:before{
+        height: 3px;
+    }
+
+
+    .burgerMenu > div:nth-of-type(2){
+        height: 230px;
+        width: 200px;
+    }
+
+    .burgerMenu > div > a{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .logo{
         font-size: 32px;
         top: 44px;
         left: 70px;
@@ -232,6 +299,7 @@ img {
         margin-top: 50px;
         margin-right: 70px;
     }
+
 
     .burgerLine{
         width: 32px;
@@ -250,11 +318,7 @@ img {
         top: 10px;
     }
 
-    .burgerMenu{
-        width: 360px;
-        height: 100vh;
-        margin-right: -360px;
-    }
+
 
     .crossClick{
         width: 34px;
@@ -270,22 +334,6 @@ img {
     .crossLine:before{
         height: 4px;
     }
-
-
-    .burgerMenu > div:nth-of-type(2){
-        height: 230px;
-        width: 200px;
-    }
-
-    .burgerMenu > div > a{
-        font-size: 16px;
-        letter-spacing: 1px;
-    }
-}
-
-@media screen and (min-width: 1200px){
-
-
 
 
 

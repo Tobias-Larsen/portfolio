@@ -51,14 +51,11 @@
             <div>
                 <a href="#">Hjem</a>
                 <a href="#">Om mig</a>
-                <a href="#">Projekter</a>
+                <a href="#">Webudvikling</a>
+                <a href="#">Film</a>
                 <a href="#">Kontakt</a>
             </div>
         </div>
-    </div>
-
-    <div class="fill">
-
     </div>
 
 
@@ -84,16 +81,17 @@
         });
 
         function showMenu() {
-            window.scrollTo(0, 0);
             $(".blurOverlay").fadeIn(200);
             $(".burgerMenu").addClass("transform");
-            $("html").css("overflow-y", "hidden");
+            //Til at deaktivere scroll, kan hurtigt aktiveres
+            // $("html").css("overflow-y", "hidden");
         }
 
         function hideMenu() {
             $(".blurOverlay").fadeOut(300);
             $(".burgerMenu").removeClass("transform");
-            $("html").css("overflow-y", "scroll")
+            //Til at aktivere scroll igen, hvis scroll bliver deaktiveret ved menu visning
+            // $("html").css("overflow-y", "scroll")
         }
     });
 
