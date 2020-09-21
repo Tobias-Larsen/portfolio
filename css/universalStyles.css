@@ -1,3 +1,8 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
 .button-bg-sky{
     background-image: url("../img/button-bg.jpg");
     background-repeat: no-repeat;
@@ -27,6 +32,16 @@
 .hide{
     display: none;
 }
+
+.noOpacity{
+    opacity: 0;
+    pointer-events: none
+}
+
+.notClickable{
+    pointer-events: none;
+}
+
 
 @media screen and (min-width: 568px){
     .button-bg-sky{

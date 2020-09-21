@@ -1,0 +1,13 @@
+/*Gør header hvid*/
+
+header > a{
+    color: #ffffff !important;
+}
+
+header .burgerLine, header .burgerLine:before, header .burgerLine:after{
+    background-color: #ffffff !important;
+}
+
+header > a:hover, .menuClick:hover{
+    opacity: 0.8;
+}

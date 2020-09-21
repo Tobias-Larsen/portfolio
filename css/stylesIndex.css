@@ -79,6 +79,10 @@ section.nr1 .circleClip > img{
     margin-top: 220vw;
 }
 
+section.nr1 .circleClip > img:nth-of-type(2){
+    display: none;
+}
+
 .nameContainer{
     margin-top: 155.2vw;
     margin-left: 8vw;
@@ -98,6 +102,11 @@ section.nr1 .circleClip > img{
     color: #2A3344;
     margin-top: 1.1vw;
     margin-bottom: 4.8vw;
+}
+
+section.nr1 .cvDownload{
+    background-image: none;
+    background-color: #B8BFCC;
 }
 
 section.nr2{
@@ -139,6 +148,11 @@ section.nr2 .mobile{
     top: 55.5vw;
 }
 
+/*Gemmer store versioner af mobil og laptop rammen*/
+section.nr2 .mobile img:nth-of-type(2), section.nr2 .p img:nth-of-type(2){
+    display: none;
+}
+
 section.nr2 .mobile img{
     width: 33.06vw;
     z-index: 10;
@@ -147,7 +161,6 @@ section.nr2 .mobile img{
 }
 
 .mobileSitesContainer{
-    background-color: yellow;
     width: 29vw;
     height: 60vw;
     z-index: 9;
@@ -228,6 +241,7 @@ section.nr2 .pc > img{
     max-width: none;
     grid-column: 1/2;
     grid-row: 1/2;
+    z-index: 8;
 }
 
 .pcSitesContainer{
@@ -325,7 +339,7 @@ section.nr3 > .infoContainer > div > div{
     flex-direction: column;
     justify-content: space-around;
     animation-name: filmTextAnimation;
-    animation-duration: 3s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
 }
 
@@ -342,10 +356,19 @@ section.nr3 > .infoContainer > div > div{
     100%{margin-top: -30vw}
 }
 
+/*Til at give en tydeligere skældning mellem de tre punkter i "film" sektionen*/
+/*section.nr3 > .infoContainer > div > div > h6:nth-of-type(1), section.nr3 > .infoContainer > div > div > h6:nth-of-type(4){*/
+/*    opacity: 0.6;*/
+/*}*/
+
+/*section.nr3 > .infoContainer > div > div > h6:nth-of-type(2){*/
+/*    opacity: 0.8;*/
+/*}*/
+
 section.nr3 > .infoContainer p{
     font-size: 3.2vw;
     color: #ffffff;
-    margin-top: 122vw;
+    margin-top: 117vw;
     margin-bottom: 3vw;
 }
 
@@ -365,7 +388,7 @@ section.nr3 > .infoContainer p{
     }
 }
 
-.logo, .menuClick, .nameContainer{
+.logo, .menuClick, .nameContainer, section:not(.nr1){
     animation-name: fadeInLoad;
     animation-duration: 0.4s;
     animation-delay: 0.4s;
@@ -414,9 +437,17 @@ section.nr3 > .infoContainer p{
     }
 
     section.nr1 .circleClip > img{
-        width: 50%;
+        width: 45%;
         margin-right: 26vw;
-        margin-top: 40vw;
+        margin-top: 31vw;
+    }
+
+    section.nr1 .circleClip > img:nth-of-type(1){
+        display: none;
+    }
+
+    section.nr1 .circleClip > img:nth-of-type(2){
+        display: inline-block;
     }
 
     .nameContainer{
@@ -433,7 +464,7 @@ section.nr3 > .infoContainer p{
         font-size: 1.26vw;
         letter-spacing: -0.03vw;
         margin-top: 0.42vw;
-        margin-bottom: 1.5vw;
+        margin-bottom: 1.34vw;
     }
 
     section.nr2{
@@ -454,6 +485,16 @@ section.nr3 > .infoContainer p{
         margin-top: 1.34vw;
     }
 
+    /*Gemmer små versioner af mobil og laptop rammen*/
+    section.nr2 .mobile img:nth-of-type(1), section.nr2 .pc img:nth-of-type(1){
+        display: none;
+    }
+
+    /*Viser store versioner af mobil og laptop rammen*/
+    section.nr2 .mobile img:nth-of-type(2), section.nr2 .pc img:nth-of-type(2){
+        display: inline-block;
+    }
+
     section.nr2 .mobile{
         left: 12.40vw;
         top: 32.08vw;
@@ -464,76 +505,172 @@ section.nr3 > .infoContainer p{
     }
 
     .mobileSitesContainer{
-        background-color: yellow;
-        width: 29vw;
-        height: 60vw;
-        z-index: 9;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: 4.2vw auto auto auto;
-        overflow: hidden;
-    }
-
-    .mobileSitesContainer > div{
-        width: 500%;
-        height: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        animation-name: respSitesFlow;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        background-color: #2A3344;
-    }
-
-    @keyframes respSitesFlow {
-        0%{margin-left: -400%}
-
-        1%{margin-left: -300%}
-        25%{margin-left: -300%}
-
-        26%{margin-left: -200%}
-        50%{margin-left: -200%}
-
-        51%{margin-left: -100%}
-        75%{margin-left: -100%}
-
-        76%{margin-left: 0}
-        100%{margin-left: 0}
-    }
-
-    .mobileSitesContainer > div > div{
-        width: 20%;
-        height: 100%;
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
+        width: 13.48vw;
+        height: 28.14vw;
+        margin: 1.8vw auto auto auto;
     }
 
     .mobileSitesContainer > div > div:nth-of-type(1), .mobileSitesContainer > div > div:nth-of-type(5){
-        background-image: url("../img/cssstyle1-mob.jpg");
+        background-image: url("../img/cssstyle1.jpg");
     }
 
     .mobileSitesContainer > div > div:nth-of-type(2){
-        background-image: url("../img/cykle1-mob.jpg");
+        background-image: url("../img/cykle1.jpg");
     }
 
     .mobileSitesContainer > div > div:nth-of-type(3){
-        background-image: url("../img/ovand1-mob.jpg");
+        background-image: url("../img/ovand1.jpg");
     }
 
     .mobileSitesContainer > div > div:nth-of-type(4){
-        background-image: url("../img/krokzoo1-mob.jpg");
+        background-image: url("../img/krokzoo1.jpg");
     }
 
+    section.nr2 .pc{
+        right: auto;
+        left: 15.33vw;
+        top: 20.52vw;
+        width: 72.362vw;
+        overflow: visible;
+    }
 
+    section.nr2 .pc > img{
+        width: 72.362vw;
+    }
 
+    .pcSitesContainer{
+        width: 52.26vw;
+        height: 30vw;
+        margin-top: 2.1vw;
+        margin-left: 10.134vw;
+    }
+
+    .pcSitesContainer > div > div{
+        background-position: top center;
+    }
+
+    .pcSitesContainer > div > div:nth-of-type(1), .pcSitesContainer > div > div:nth-of-type(5){
+        background-image: url("../img/cssstyle2.jpg");
+    }
+
+    .pcSitesContainer > div > div:nth-of-type(2){
+        background-image: url("../img/cykle2.jpg");
+    }
+
+    .pcSitesContainer > div > div:nth-of-type(3){
+        background-image: url("../img/ovand2.jpg");
+    }
+
+    .pcSitesContainer > div > div:nth-of-type(4){
+        background-image: url("../img/krokzoo2.jpg");
+    }
+
+    section.nr3{
+        height: 59.8vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.nr3 > .image{
+        width: 100%;
+        background-image: url("../img/editing2.jpg");
+    }
+
+    section.nr3 > .infoContainer{
+        grid-column: 2/3;
+        margin: auto;
+    }
+
+    section.nr3 > .infoContainer > div{
+        height: 4vw;
+        margin-top: 0;
+    }
+
+    section.nr3 > .infoContainer h6{
+        font-size: 2.848vw;
+        color: #2A3344;
+    }
+
+    section.nr3 > .infoContainer > div > div{
+        height: 16vw;
+    }
+
+    @keyframes filmTextAnimation {
+        0%{margin-top: 0}
+
+        5%{margin-top: -4vw}
+        33.33%{margin-top: -4vw}
+
+        38.33%{margin-top: -8vw}
+        66.66%{margin-top: -8vw}
+
+        71.66%{margin-top: -12vw}
+        100%{margin-top: -12vw}
+    }
+
+    section.nr3 > .infoContainer p{
+        font-size: 1.675vw;
+        color: #2A3344;
+        margin-top: 1vw;
+        margin-bottom: 1.34vw;
+    }
 }
 
 @media screen and (min-width: 1200px){
+    section.nr2{
+        height: 50vw;
+    }
+
+    section.nr2 > .infoContainer > h6{
+        font-size: 2.92vw;
+        margin-top: 6.35vw;
+    }
+
+    section.nr2 > .infoContainer > p{
+        font-size: 1.77vw;
+        margin-top: 0.625vw;
+    }
+
+    section.nr2 > .infoContainer > a{
+        margin-top: 1.04vw;
+    }
+
+    section.nr2 .mobile{
+        left: 26.77vw;
+        top: 25.86vw;
+    }
+
+    section.nr2 .mobile img{
+        width: 9.427vw;
+    }
+
+    .mobileSitesContainer{
+        width: 8.18vw;
+        height: 17vw;
+        margin: 1.1vw auto auto auto;
+    }
+
+    section.nr2 .pc{
+        left: 28.49vw;
+        top: 18.75vw;
+        width: 44.74vw;
+    }
+
+    section.nr2 .pc > img{
+        width: 44.74vw;
+    }
+
+    .pcSitesContainer{
+        width: 32.5vw;
+        height: 18.4vw;
+        margin-top: 1.32vw;
+        margin-left: 6.2vw;
+    }
+
+    section.nr3 > .infoContainer p{
+        margin-bottom: 1.8vw;
+    }
 
 }
-
 
 
 

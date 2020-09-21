@@ -1,0 +1,133 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+
+
+
+.imageTop{
+    width: 100%;
+    height: 100vw;
+    background-image: url("../img/webudvikler/website-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imageTop > .infoContainer{
+    position: absolute;
+    left: 8vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imageTop > .infoContainer > h1{
+    color: #ffffff;
+    font-size: 10.6667vw;
+}
+
+.imageTop > .infoContainer > #typeOutHead{
+    color: #ffffff;
+    font-size: 2.9333vw;
+    font-weight: bold;
+    width: 61vw;
+    height: 7vw;
+}
+
+.imageTop > p{
+    font-size: 2.9333vw;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+
+@media screen and (min-width: 568px){
+    .imageTop{
+        width: 100%;
+        height: 32vw;
+        background-image: url("../img/webudvikler/website-bg1.jpg");
+    }
+
+    .imageTop > .infoContainer{
+        left: 15.3125vw;
+    }
+
+    .imageTop > .infoContainer > h1{
+        font-size: 4.1666vw;
+    }
+
+    .imageTop > .infoContainer > #typeOutHead{
+        font-size: 1.25vw;
+        width: 26.5vw;
+        height: 2.86vw;
+    }
+
+    .imageTop > p{
+        font-size: 1.25vw;
+        margin-bottom: 0.8vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
