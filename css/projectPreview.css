@@ -7,7 +7,7 @@
 
 
 
-section.projectPreview:nth-of-type(odd){
+section.projectPreview:nth-of-type(even){
     background-color: #eeeeee;
 }
 
@@ -74,7 +74,7 @@ section.projectPreview > .infoContainer > img{
     z-index: 20;
 }
 
-section.projectPreview:nth-of-type(odd) > .infoContainer > img{
+section.projectPreview:nth-of-type(even) > .infoContainer > img{
     width: 9.6vw;
 }
 
@@ -84,11 +84,11 @@ section.projectPreview > .infoContainer > img.centered{
     cursor: pointer;
 }
 
-section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
+section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
     width: 41vw;
 }
 
-section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
+section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
     width: 20vw;
 }
 
@@ -167,7 +167,7 @@ section.projectPreview > .infoContainer{
         left: auto;
     }
 
-    section.projectPreview:nth-of-type(odd) > .infoContainer > img{
+    section.projectPreview:nth-of-type(even) > .infoContainer > img{
         width: 3vw;
     }
 
@@ -181,11 +181,11 @@ section.projectPreview > .infoContainer{
         right: 100%;
     }
 
-    section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
+    section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
         width: 15vw;
     }
 
-    section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
+    section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
         width: 6vw;
     }
 

@@ -65,6 +65,7 @@ img {
 .imageTop > .infoContainer > h1{
     color: #ffffff;
     font-size: 10.6667vw;
+    font-weight: bold;
 }
 
 .imageTop > .infoContainer > #typeOutHead{
@@ -75,13 +76,146 @@ img {
     height: 7vw;
 }
 
-.imageTop > p{
-    font-size: 2.9333vw;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 2vw;
+.skillsSection{
+    width: 100%;
+    height: 180vw;
+    background-color: #eee;
+    display: grid;
+    grid-template-rows: 2fr 140vw 1fr;
 }
 
+.fadeOut{
+    height: 47vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: linear-gradient(#eee 10%, rgba(0, 0, 0, 0) 100%);
+    z-index: 8;
+}
+
+.fadeOut.top{
+    margin-bottom: auto;
+}
+
+.fadeOut.bottom{
+    margin-top: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, #eee 90%);
+}
+
+.skillsSection > h3{
+    font-size: 7.5vw;
+    color: #2A3344;
+}
+
+.blueLine{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    height: 100%;
+    width: 2.8vw;
+    background-color: #2A3344;
+    margin: auto;
+}
+
+.skillsContainer{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.skillsContainer > div{
+    width: 100%;
+    height: 100%;
+    animation: 15s running infinite skillAnimation linear;
+}
+
+.skillsSection > p{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 2.9333vw;
+    color: #2A3344;
+    font-weight: bold;
+    margin-bottom: 4vw;
+}
+
+@keyframes skillAnimation {
+    0% {margin-top: 0}
+
+    12% {margin-top: 0}
+    14% {margin-top: -140vw}
+
+    26% {margin-top: -140vw}
+    28% {margin-top: -280vw}
+
+    40% {margin-top: -280vw}
+    42% {margin-top: -420vw}
+
+    54% {margin-top: -420vw}
+    56% {margin-top: -560vw}
+
+    68% {margin-top: -560vw}
+    70% {margin-top: -700vw}
+
+    82% {margin-top: -700vw}
+    84% {margin-top: -840vw}
+
+    98% {margin-top: -840vw}
+    100% {margin-top: -980vw}
+}
+
+.skill{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillImage{
+    height: 46vw;
+    width: 46vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #eeeeee;
+}
+
+.skillImage.html{
+    background-image: url("../img/webudvikler/html5.png");
+}
+
+.skillImage.scss{
+    height: 35vw;
+    background-position: center bottom;
+    background-image: url("../img/webudvikler/sass.png");
+}
+
+.skillImage.java{
+    background-image: url("../img/webudvikler/java.jpg");
+    width: 38vw;
+}
+
+.skillImage.jquery{
+    background-image: url("../img/webudvikler/jquery.png");
+    background-position: center bottom;
+    width: 40vw;
+    border-bottom: 2vw solid #eeeeee;
+}
+
+.skillImage.gulp{
+    background-image: url("../img/webudvikler/gulp.jpg");
+    width: 38vw;
+}
+
+.skillImage.github{
+    background-image: url("../img/webudvikler/github.png");
+    width: 44vw;
+}
+
+.skillImage.bootstrap{
+    background-image: url("../img/webudvikler/bootstrap.png");
+    height: 38vw;
+}
 
 @media screen and (min-width: 568px){
     .imageTop{
@@ -104,10 +238,99 @@ img {
         height: 2.86vw;
     }
 
-    .imageTop > p{
-        font-size: 1.25vw;
-        margin-bottom: 0.8vw;
+
+    .skillsSection{
+        height: 45vw;
+        grid-template-rows: 2fr 35vw 1fr;
     }
+
+    .fadeOut{
+        height: 10vw;
+    }
+
+    .skillsSection > h3{
+        font-size: 2vw;
+    }
+
+    .blueLine{
+        width: 1vw;
+    }
+
+    .skillsSection > p{
+        font-size: 1vw;
+        margin: auto 0;
+    }
+
+    @keyframes skillAnimation {
+        0% {margin-top: 0}
+
+        12% {margin-top: 0}
+        14% {margin-top: -35vw}
+
+        26% {margin-top: -35vw}
+        28% {margin-top: -70vw}
+
+        40% {margin-top: -70vw}
+        42% {margin-top: -105vw}
+
+        54% {margin-top: -105vw}
+        56% {margin-top: -140vw}
+
+        68% {margin-top: -140vw}
+        70% {margin-top: -175vw}
+
+        82% {margin-top: -175vw}
+        84% {margin-top: -210vw}
+
+        98% {margin-top: -210vw}
+        100% {margin-top: -245vw}
+    }
+
+    .skill{
+    }
+
+    .skillImage{
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .skillImage.html{
+    }
+
+    .skillImage.scss{
+        height: 7.5vw;
+    }
+
+    .skillImage.java{
+        width: 8vw;
+    }
+
+    .skillImage.jquery{
+        width: 8vw;
+        border-bottom: 0.5vw solid #eeeeee;
+    }
+
+    .skillImage.gulp{
+        width: 8vw;
+    }
+
+    .skillImage.github{
+        width: 9vw;
+    }
+
+    .skillImage.bootstrap{
+        background-image: url("../img/webudvikler/bootstrap.png");
+        height: 8vw;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 

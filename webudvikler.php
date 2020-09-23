@@ -16,6 +16,9 @@
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
+    <!--    Bootstrap css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/stylesWebudvikler.css" rel="stylesheet" type="text/css">
     <link href="css/universalStyles.css" rel="stylesheet" type="text/css">
@@ -43,8 +46,49 @@ include 'header.php';
         <h1>Webudvikling</h1>
         <div class="noOpacity" id="typeOutHead">Her kan ses et udvalg af de hjemmesider jeg har været med til at udtænke og udvikle</div>
     </div>
+</section>
 
-    <p class="hide">Klik på logoerne nedenunder</p>
+<section class="skillsSection">
+    <div class="fadeOut top"></div>
+    <h3 class="text-center my-auto font-weight-bold">Mine værktøjer</h3>
+    <div class="blueLine"></div>
+    <div class="skillsContainer">
+        <div>
+            <div class="skill">
+                <div class="skillImage html"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage scss"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage java"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage jquery"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage gulp"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage github"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage bootstrap"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skillImage html"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fadeOut bottom"></div>
+    <p class="text-center mt-auto">Klik på logoerne nedenunder, for at se mine projekter</p>
 </section>
 
 <section class="projectPreview project1">
@@ -63,7 +107,7 @@ include 'header.php';
 
     <div class="infoContainer">
         <img class="project1 centered" src="img/krokLogo.png" alt="Logo for Krokodille Zoo">
-        
+
         <div class="info noOpacity">
             <div><p>Kunde</p><p class="fact1 noOpacity">Krokodille Zoo</p></div>
             <div><p>Færdiggjort</p><p class="fact2 noOpacity">Juni 2020</p></div>
@@ -194,6 +238,7 @@ include 'footer.php';
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 
     $(function () {
@@ -207,12 +252,10 @@ include 'footer.php';
 
             if (counter == textLength){
                 clearInterval(self);
-                setTimeout(function () {
-                    $(".imageTop > p").fadeIn(200);
-                }, 400)
             } else {
                 counter = parseInt(counter) + 1;
                 $(textId) .text(textVariable.slice(0, counter)) .removeClass("noOpacity");
+                console.log(1);
             }
         }
 
