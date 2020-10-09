@@ -23,7 +23,7 @@
     <link href="css/stylesFilm.min.css" rel="stylesheet" type="text/css">
     <link href="css/universalStyles.css" rel="stylesheet" type="text/css">
     <link href="css/whiteHeader.css" rel="stylesheet" type="text/css">
-    <link href="css/projectPreview.css" rel="stylesheet" type="text/css">
+    <link href="css/projectPreviewFilm.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -204,66 +204,107 @@ include 'header.php';
 
 <section class="projectPreview project1">
 
-    <div class="imageContainer noOpacity">
-        <div class="mobileSite">
-            <img src="img/webudvikler/krokZooMobile.jpg" alt="Hjemmesider vist på mobil">
-            <img src="img/webudvikler/krokZooMobile1.jpg" alt="Hjemmesider vist på mobil">
+    <div class="imageContainer">
+        <div class="pcVideo first">
+            <img src="img/buonoVid1mob.jpg" alt="Video vist på en computer">
+            <img src="img/buonoVid1.jpg" alt="Video vist på en computer">
         </div>
 
-        <div class="pcSite">
-            <img src="img/webudvikler/krokZooPC.jpg" alt="Hjemmesider vist på computer">
-            <img src="img/webudvikler/krokZooPC1.jpg" alt="Hjemmesider vist på computer">
+        <div class="pcVideo second">
+            <img src="img/buonoVid2mob.jpg" alt="Video vist på en computer">
+            <img src="img/buonoVid2.jpg" alt="Video vist på en computer">
         </div>
     </div>
 
     <div class="infoContainer">
-        <img class="project1 centered" src="img/krokLogo.png" alt="Logo for Krokodille Zoo">
+        <img class="project1" src="img/buonoLogo.png" alt="Logo for Buono Brothers">
 
-        <div class="info noOpacity">
-            <div><p>Kunde</p><p class="fact1 noOpacity">Krokodille Zoo</p></div>
-            <div><p>Færdiggjort</p><p class="fact2 noOpacity">Juni 2020</p></div>
-            <div><p>Målgruppe</p><p class="fact3 noOpacity">Forældre og børn 4 - 8 år</p></div>
-            <p class="noOpacity">
-                En lille zoo i Eskilstrup, der gerne vil ramme børnefamilierne lidt mere, end hvad de i forvejen gør. Dette var vores sommereksamen, hvor der både er hovedsiden, og en specifik hjemmeside til børnene, med blandt andet et interaktivt kort over zooen. Alt dette for at fremme Krokodille Zoos brand hos børnene, hvilket derefter vil smitte af på forældrene.
+        <div class="info">
+            <div><p>Kunde</p><p class="fact1">Buono Brothers</p></div>
+            <div><p>Færdiggjort</p><p class="fact2">April 2020</p></div>
+            <div><p>Målgruppe</p><p class="fact3">Alderen 50+</p></div>
+            <p class="">
+                Vi fik lov til at lave en musikvideo til Buono Brothers, som er fire brødre, der spiller folkemusik fra deres hjemland Italien. Videoen fik både en humoristisk tone, samt et visuelt behageligt udtryk, med den røde farve der springer frem, i forhold til alle de andre desaturerede farver.
                 <br>
                 <br>
-                Da vores projekter er gruppearbejde, kan jeg ikke tage æren for hele hjemmesiden. Jeg har lavet header, footer og forside som kan ses <a href="https://tobiaskozaklarsen.dk/krokodillezoo/" target="_blank">her</a>, samt det interaktive kort på børnesiden som kan ses <a href="https://tobiaskozaklarsen.dk/krokodillezoo/kids/interaktivtKort" target="_blank">her</a>.
+                Hele filmen skulle optages på én dag, men det kom der også noget godt ud af. Som brødrenes humør udvikler sig til den negative side på deres rejse, følger vejret med. De slutter i tusmørke, hvor deres gejst for at spille musik, alligevel får et smil frem på læben af dem.
+                <br>
+                <br>
+                Se videoen <a href="https://www.youtube.com/watch?v=Naa0HxTG8Ks" target="_blank">her</a>.
             </p>
         </div>
     </div>
 </section>
 
 <section class="projectPreview project2">
-    <div class="imageContainer right noOpacity">
-        <div class="mobileSite">
-            <img src="img/webudvikler/cssStyleMobile.jpg" alt="Hjemmesider vist på mobil">
-            <img src="img/webudvikler/cssStyleMobile1.jpg" alt="Hjemmesider vist på mobil">
+    <div class="imageContainer">
+        <div class="pcVideo first">
+            <img src="img/krokVid1mob.jpg" alt="Video vist på en computer">
+            <img src="img/krokVid1.jpg" alt="Video vist på en computer">
         </div>
 
-        <div class="pcSite">
-            <img src="img/webudvikler/cssStylePC.jpg" alt="Hjemmesider vist på computer">
-            <img src="img/webudvikler/cssStylePC1.jpg" alt="Hjemmesider vist på computer">
+        <div class="pcVideo second">
+            <img src="img/krokVid2mob.jpg" alt="Video vist på en computer">
+            <img src="img/krokVid2.jpg" alt="Video vist på en computer">
         </div>
     </div>
 
     <div class="infoContainer">
-        <img class="project2 centered" src="img/cssStyleLogo.png" alt="Logo for Krokodille Zoo">
+        <img class="project2" src="img/krokLogo.png" alt="Logo for Krokodille Zoo">
 
-        <div class="info noOpacity">
-            <div><p>Kunde</p><p class="fact1 noOpacity">CSS Style (fiktiv)</p></div>
-            <div><p>Færdiggjort</p><p class="fact2 noOpacity">April 2020</p></div>
-            <div><p>Målgruppe</p><p class="fact3 noOpacity">Webudviklere</p></div>
-            <p class="noOpacity">
-                Vi fik til opgave at opfinde vores eget koncept til en t-shirt virksomhed, og her var det oplagt at bruge os selv som målgruppe. T-shirt designs der henvender sig til webudviklere, skal også have en hjemmeside, som en webudvikler føler sig hjemme på. Vi stødte dog på udfordringer, da dette var første gang vi blev introduceret til Wordpress, og skulle udarbejde hjemmesiden idet. Vi havde blandt andet problemer med links og opløsning på billeder, men jeg har inddraget den alligevel, fordi der er mange gode tanker bag og muligheden for at gå i 'dark mode' er både en lækker detalje, men også en feature med voksende popularitet på alverdens hjemmesider.
+        <div class="info">
+            <div><p>Kunde</p><p class="fact1">Krokodille Zoo</p></div>
+            <div><p>Færdiggjort</p><p class="fact2">Juni 2020</p></div>
+            <div><p>Målgruppe</p><p class="fact3">Forældre og børn 4 - 8 år</p></div>
+            <p class="">
+                En reklamefilm, der viser Krokodille Zoos diversitet. På trods af navnet, rummer zooen over mange andre dyr end krokodiller. Filmen er tiltænkt at kunne spilles på sociale medier eller som reklame i biografer, for at turister kan blive opmærksom på attraktionen.
                 <br>
                 <br>
-
-                Se siden <a href="https://tobiaskozaklarsen.dk/cssstyle/" target="_blank">her</a>.
+                Dette var en oplevelse at være med til, fordi det ikke er hver dag der er så skarpe tænder på den anden side af kameralinsen. Vi fik lov til alt hvad vi spurgte om af ejeren René, men dog var vi stadigvæk en smule begrænset af en Covid-19 pandemi, der umuliggjorde optagelser med publikum.
+                <br>
+                <br>
+                Se videoen <a href="https://www.youtube.com/watch?v=5g2YAnXe8So" target="_blank">her</a>.
             </p>
         </div>
     </div>
 </section>
 
+<section class="projectPreview project3">
+    <div class="imageContainer">
+        <div class="pcVideo first">
+            <img src="img/buonoVid1mob.jpg" alt="Video vist på en computer">
+            <img src="img/buonoVid1.jpg" alt="Video vist på en computer">
+        </div>
+
+        <div class="pcVideo second">
+            <img src="img/buonoVid2mob.jpg" alt="Video vist på en computer">
+            <img src="img/buonoVid2.jpg" alt="Video vist på en computer">
+        </div>
+    </div>
+
+    <div class="infoContainer">
+        <img class="project3" src="img/ovandLogo.png" alt="Logo for Ø vand">
+
+        <div class="info">
+            <div><p>Kunde</p><p class="fact1">Ø vand (fiktiv)</p></div>
+            <div><p>Færdiggjort</p><p class="fact2">November 2019</p></div>
+            <div><p>Målgruppe</p><p class="fact3">16 - 25 årige, igang med en uddannelse</p></div>
+            <p class="">
+                Vand på flaske. Det er nemt, men det skal bare ikke gå ud over naturen. Ø vand er det miljørigtige alternativ, med genbrugelige flasker, der blot afleveres i en automat på dit uddannelsessted, hvorefter en ny er i din hånd indenfor 10 sekunder.
+                <br>
+                <br>
+                Filmen henvender sig til de unge, og er tiltænkt som reklame på YouTube.
+                I alderen 16-25 år, udvikler man mange politiske holdninger, som kan svære at handle ud fra, hvis man stadigvæk bor hjemme hos mor og far.
+                <br>
+                <br>
+                #jegstårher afspejler en ungdom der savner svar og handling på et truende klimaproblem, fra de ældre generationer, og er i den grad noget som alle unge i dag, har en holdning til.
+                <br>
+                <br>
+                Se videoen <a href="https://www.youtube.com/watch?v=tJaHNpbWHx0" target="_blank">her</a>.
+            </p>
+        </div>
+    </div>
+</section>
 
 
 
@@ -432,83 +473,6 @@ include 'footer.php';
             loopTop();
             setInterval(loopTop, 14000);
         }, 500);
-
-
-
-
-        let counterFacts = 0;
-        let textLengthFacts = 0;
-        let textVariableFacts = 0;
-        let textIdFacts = 0;
-        let selectedClass;
-        let selectedSection;
-        let factNumber = 0;
-
-        function writeOutFactsTrigger() {
-            factNumber = parseInt(factNumber) + 1;
-            counterFacts = 0;
-            textIdFacts = selectedSection + " .fact" + factNumber;
-            textVariableFacts = $(textIdFacts).text();
-
-            let interval  = setInterval(function () {
-                textLengthFacts = textVariableFacts.length;
-
-                if (counterFacts == textLengthFacts){
-                    clearInterval(interval);
-                } else {
-                    counterFacts = parseInt(counterFacts) + 1;
-                    $(textIdFacts) .text(textVariableFacts.slice(0, counterFacts)) .removeClass("noOpacity");
-                }
-            }, 50);
-        }
-
-        function hideOther(){
-            $(".infoContainer > img:not(" + selectedClass + ")").addClass('centered');
-            $("section > .infoContainer > .info:not(" + selectedSection + " > .infoContainer > .info)").addClass('noOpacity')
-            $("section .info > p:not(" + selectedSection + " .info > p)").addClass('noOpacity');
-            $("section > .imageContainer:not(" + selectedSection + " > .imageContainer)").addClass('noOpacity');
-            $("section .info > div > p:nth-of-type(2):not(" + selectedSection + ".info > div > p:nth-of-type(2))").addClass('noOpacity');
-
-
-        }
-
-
-        $(".infoContainer > img.centered").click(function () {
-
-            selectedClass = "." + $(this).attr('class').replace(" centered", "");
-            $(selectedClass).removeClass('centered');
-            selectedSection = "section" + selectedClass;
-
-            //Deaktiver denne knap, og aktiver alle andre knapper
-            $('.infoContainer > img' + selectedClass).addClass('notClickable');
-            $('.infoContainer > img:not(.infoContainer > img' + selectedClass + ')').removeClass('notClickable');
-
-            factNumber = 0;
-            setTimeout(function () {
-                $(selectedSection + " > .infoContainer > .info").removeClass('noOpacity');
-
-                setTimeout(function () {
-                    writeOutFactsTrigger();
-                    setTimeout(function () {
-                        writeOutFactsTrigger();
-                        setTimeout(function () {
-                            writeOutFactsTrigger();
-                            setTimeout(function () {
-                                $(selectedSection + " .info > p").removeClass('noOpacity');
-                                $(selectedSection + " > .imageContainer").removeClass('noOpacity');
-                            }, 1500)
-                        }, 1000)
-                    }, 1000)
-                }, 500)
-
-            }, 200);
-
-            //Til at skjule de andre
-            hideOther()
-        });
-
-
-
     });
 
 </script>

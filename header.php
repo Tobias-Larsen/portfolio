@@ -55,7 +55,7 @@
                 <a href="index.php">Hjem</a>
                 <a href="#">Om mig</a>
                 <a href="webudvikler.php">Webudvikling</a>
-                <a href="#">Film</a>
+                <a href="film.php">Film</a>
                 <a href="#">Kontakt</a>
             </div>
         </div>

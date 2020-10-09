@@ -288,14 +288,14 @@ img {
 @media screen and (min-width: 1200px){
     .logo{
         font-size: 32px;
-        top: 44px;
+        top: 42px;
         left: 70px;
     }
 
     .menuClick{
         width: 32px;
         height: 24px;
-        margin-top: 50px;
+        margin-top: 53px;
         margin-right: 70px;
     }
 

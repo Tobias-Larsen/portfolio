@@ -326,7 +326,208 @@
   width: 24vw;
 }
 
+@media screen and (min-width: 568px){
+  .videoEditing{
+    grid-template-rows: 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw;
+    grid-row-gap: 3px;
+  }
 
+  .secondGrid{
+    grid-template-rows: 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw 2.1875vw;
+    grid-row-gap: 3px;
+  }
+
+  .fx{
+    background-size: 1vw;
+    background-position: 0.8333vw 0.3125vw;
+  }
+
+  .textFilmF{
+    margin-left: 26.875vw;
+  }
+
+  .textFilmI{
+    margin-left: 39.0625vw;
+  }
+
+  .textFilmI1{
+    margin-left: 37.1354vw;
+  }
+
+  .textFilmL{
+    margin-left: 46.0417vw;
+  }
+
+  .textFilmM{
+    margin-left: 56.5104vw;
+  }
+
+  .textFilmM1{
+    margin-left: 62.6402vw;
+  }
+
+  .textFilmM2{
+    margin-left: 64.1146vw;
+  }
+
+  .textFilmM3{
+    margin-left: 68.6458vw;
+  }
+
+  .textFilmM4{
+    margin-left: 65.7292vw;
+  }
+
+  .textFilmM5{
+    margin-left: 70.1042vw;
+  }
+
+  .textOgO{
+    margin-left: 35.7292vw;
+  }
+
+  .textOgO1{
+    margin-left: 0;
+  }
+
+  .textOgO2{
+    margin-left: 10.18vw;
+  }
+
+  .textOgG{
+    margin-left: 51.0938vw;
+  }
+
+  .textOgG1{
+    margin-left: 0;
+  }
+
+  .textOgG2{
+    margin-left: 10.18vw;
+  }
+
+  .textOgG3{
+    margin-left: 6.6146vw;
+  }
+
+  .textVideoV1{
+    margin-left: 24.6875vw;
+  }
+
+  .textVideoV2{
+    margin-left: 33.4896vw;
+  }
+
+  .textVideoV3{
+    margin-left: 25.4167vw;
+  }
+
+  .textVideoV4{
+    margin-left: 32.7604vw;
+  }
+
+  .textVideoV5{
+    margin-left: 26.1458vw;
+  }
+
+  .textVideoV6{
+    margin-left: 32.0313vw;
+  }
+
+  .textVideoV7{
+    margin-left: 26.875vw;
+  }
+
+  .textVideoV8{
+    margin-left: 31.25vw;
+  }
+
+  .textVideoV9{
+    margin-left: 27.6042vw;
+  }
+
+  .textVideoV10{
+    margin-left: 28.333vw;
+  }
+
+  .textVideoV11{
+    margin-left: 29.0625vw;
+  }
+
+  .textVideoI1{
+    margin-left: 38.1771vw;
+  }
+
+  .textVideoI2{
+    margin-left: 40.0521vw;
+  }
+
+  .textVideoD1{
+    margin-left: 46.9271vw;
+  }
+
+  .textVideoD2{
+    margin-left: 51.3542vw;
+  }
+
+  .textVideoD3{
+    margin-left: 52.0833vw;
+  }
+
+  .textVideoE1{
+    margin-left: 56.7708vw;
+  }
+
+  .textVideoO{
+    margin-left: 66.5625vw;
+  }
+
+  .textVideoO1{
+    margin-left: 0;
+  }
+
+  .textVideoO2{
+    margin-left: 5.8vw;
+  }
+
+
+  //Width
+  .w-10{
+    width: 1.4583vw;
+  }
+
+  .w-20{
+    width: 3.0208vw;
+  }
+
+  .w-30{
+    width: 4.4792vw;
+  }
+
+  .w-40{
+    width: 5.9375vw;
+  }
+
+  .w-45{
+    width: 6.5625vw;
+  }
+
+  .w-51{
+    width: 7.3958vw;
+  }
+
+  .w-55{
+    width: 8.0208vw;
+  }
+
+  .w-60{
+    width: 8.8021vw;
+  }
+
+  .w-90{
+    width: 13.1771vw;
+  }
+}
 
 
 

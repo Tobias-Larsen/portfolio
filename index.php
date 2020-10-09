@@ -104,7 +104,7 @@ include 'header.php';
         </div>
         <p>Narrativ dramafilm, blæret musikvideo eller
             <br>informerende reklamefilm? Jeg vil være med!</p>
-        <a href="#" class="button-bg-sky">film & video</a>
+        <a href="film.php" class="button-bg-sky">film & video</a>
     </div>
 </section>
 

@@ -1,0 +1,287 @@
+
+
+
+
+
+
+
+section.projectPreview:nth-of-type(odd){
+    background-color: #eeeeee;
+}
+
+section > .imageContainer{
+    height: 84.8vw;
+    width: 100%;
+    display: grid;
+    transition: 0.3s;
+}
+
+section > .imageContainer > div{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectPreview > .imageContainer > div > img:nth-of-type(2){
+    display: none;
+}
+
+
+.projectPreview > .imageContainer > .pcVideo > img{
+    width: 90vw;
+    animation: deviceAnimation infinite 10s;
+    z-index: 10;
+}
+.projectPreview > .imageContainer > .pcVideo.first > img{
+    animation-delay: 7.5s;
+}
+
+.projectPreview > .imageContainer > .pcVideo.second > img{
+    animation-delay: 2.5s;
+}
+
+@keyframes deviceAnimation {
+    0%{opacity: 1;}
+    20%{opacity: 1}
+    25%{opacity: 0}
+    70%{opacity: 0}
+    75%{opacity: 1}
+    100%{opacity: 1}
+}
+
+.projectPreview > .imageContainer.centered > .pcSite > img{
+    animation-play-state: paused;
+}
+
+
+section.projectPreview > .infoContainer{
+    position: relative;
+}
+
+section.projectPreview > .infoContainer > img{
+    position: absolute;
+    top: 0;
+    transform:translateX(0) translateY(0);
+    right:  9.0666vw;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.infoContainer > img.project1, .infoContainer > img.project2{
+    width: 17vw;
+}
+
+.infoContainer > .project3{
+    width: 12vw;
+}
+
+section.projectPreview > .infoContainer > img.centered{
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+}
+
+section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
+    width: 41vw;
+}
+
+section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
+    width: 20vw;
+}
+
+section.projectPreview > .infoContainer{
+    padding-bottom: 17.8666vw;
+}
+
+.infoContainer > .info{
+    margin: 0 9vw 0 9vw;
+    transition: 0.2s;
+}
+
+.infoContainer > .info > div{
+    display: flex;
+}
+
+.infoContainer > .info p{
+    color: #2A3344;
+    font-size: 2.9333vw;
+}
+
+.infoContainer > .info > div > p:nth-of-type(1){
+    font-weight: bold;
+    margin-right: 4.2667vw;
+    margin-bottom: 3.7333vw;
+}
+
+.infoContainer > .info > p{
+    transition: 0.3s;
+}
+
+.infoContainer > .info p > a{
+    font-weight: bold;
+    color: #2A3344;
+}
+
+
+
+/*logo  resize*/
+
+
+
+
+
+@media screen and (min-width: 568px){
+    .projectPreview > .imageContainer > div > img:nth-of-type(1){
+        display: none;
+    }
+
+    .projectPreview > .imageContainer > div > img:nth-of-type(2){
+        display: inline-block;
+    }
+
+
+    section.projectPreview{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section > .imageContainer{
+        height: 100%;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    section.project2 > .imageContainer, section.project4 > .imageContainer {
+        grid-column: 2/3;
+    }
+
+    .projectPreview > .imageContainer > .mobileSite > img{
+        width: 10vw;
+    }
+
+    .projectPreview > .imageContainer > .pcVideo > img{
+        width: 35.3125vw;
+    }
+
+    section.projectPreview > .infoContainer > img{
+        top: 5%;
+        right:  5%;
+        transform: translateY(0) translateX(0);
+        left: auto;
+    }
+
+    .infoContainer > img.project1, .infoContainer > img.project2{
+        width: 8vw;
+    }
+
+    .infoContainer > .project3{
+        width: 4.5vw;
+    }
+
+    section.projectPreview > .infoContainer > img.centered{
+        right: 0;
+        top: 50%;
+    }
+
+    section.project1 > .infoContainer > img.centered, section.project3 > .infoContainer > img.centered{
+        transform: translateY(-50%) translateX(50%);
+        right: 100%;
+    }
+
+    section.projectPreview:nth-of-type(even) > .infoContainer > img.centered{
+        width: 15vw;
+    }
+
+    section.projectPreview:nth-of-type(odd) > .infoContainer > img.centered{
+        width: 6vw;
+    }
+
+    section.projectPreview > .infoContainer{
+        padding-bottom: 6vw;
+        padding-top: 6vw;
+    }
+
+    .infoContainer > .info{
+        margin: 0 5vw 0 5vw;
+    }
+
+    .infoContainer > .info > div{
+        display: flex;
+    }
+
+    .infoContainer > .info p{
+        font-size: 1.25vw;
+    }
+
+    .infoContainer > .info > div > p:nth-of-type(1){
+        margin-right: 1.458vw;
+        margin-bottom: 1.354vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
