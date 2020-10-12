@@ -2,6 +2,7 @@ footer{
     height: 100vw;
     display: grid;
     grid-template-rows: 1fr auto;
+    overflow: hidden;
 }
 
 .footerInfo{
@@ -21,22 +22,115 @@ footer{
     font-size: 3.2vw;
     color: #2A3344;
     margin-top: 11.2vw;
+    transition: 0.5s;
 }
 
 .footerInfo > a{
     margin-top: 2.93vw;
+    transition: 0.5s;
+}
+
+.footerInfo.hide{
+    display: flex;
+}
+
+.footerInfo.hide > p, .footerInfo.hide > a{
+    opacity: 0;
 }
 
 
-footer > .image{
+footer > .imageContainer{
     height: 46.66vw;
     width: 100%;
-    background-image: url("../img/footer-bg1.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-column: 1/2;
     grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
 }
+
+.footer-bg-mountain{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: 3s;
+}
+
+.footer-bg-mountain.mountain1{
+    background-image: url("../img/footer-bg-animation-mob-1.png");
+    z-index: 10;
+}
+
+.footer-bg-mountain.mountain2{
+    background-image: url("../img/footer-bg-animation-mob-2.png");
+    z-index: 9;
+}
+
+.footer-bg-mountain.mountain3{
+    background-image: url("../img/footer-bg-animation-mob-3.png");
+    z-index: 8;
+}
+
+.footer-bg-mountain.mountain4{
+    background-image: url("../img/footer-bg-animation-mob-4.png");
+    z-index: 7;
+}
+
+.footer-bg-mountain.animateMountain{
+    background-position: 50% 60vw;
+}
+
+.contactInfo{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    z-index: 5;
+    margin-top: -25vw;
+    transition: 1s;
+}
+
+.contactInfo.hide{
+    margin-top: 8vw;
+    opacity: 0;
+    display: inline;
+}
+
+.messengerInfo, .mailInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.messengerInfo:hover, .mailInfo:hover{
+    opacity: 0.6;
+}
+
+.mailInfo{
+    margin-top: 6.666vw;
+}
+
+.messengerInfo > i, .mailInfo > i{
+    font-size: 8.2667vw;
+    color: #00A8E6;
+}
+
+.messengerInfo > p, .mailInfo > p{
+    margin-top: 2.133vw;
+    font-size: 3.2vw;
+    color: #2A3344;
+}
+
+
+
 
 @media screen and (min-width: 568px){
     footer{
@@ -57,9 +151,41 @@ footer > .image{
         margin-top: 1.173vw;
     }
 
-    footer > .image{
+    footer > .imageContainer{
         height: 36vw;
-        background-image: url("../img/footer-bg2.jpg");
+    }
+
+    .footer-bg-mountain.mountain1{
+        background-image: url("../img/footer-bg-animation-1.png");
+    }
+
+    .footer-bg-mountain.mountain2{
+        background-image: url("../img/footer-bg-animation-2.png");
+    }
+
+    .footer-bg-mountain.mountain3{
+        background-image: url("../img/footer-bg-animation-3.png");
+    }
+
+    .footer-bg-mountain.mountain4{
+        background-image: url("../img/footer-bg-animation-4.png");
+    }
+
+    .contactInfo{
+        margin-top: -4vw;
+    }
+
+    .mailInfo{
+        margin-top: 4vw;
+    }
+
+    .messengerInfo > i, .mailInfo > i{
+        font-size: 4.2vw;
+    }
+
+    .messengerInfo > p, .mailInfo > p{
+        margin-top: 1.1vw;
+        font-size: 1.675vw;
     }
 }
 
@@ -81,7 +207,7 @@ footer > .image{
         margin-top: 1.04vw;
     }
 
-    footer > .image{
+    footer > .imageContainer{
         height: 36vw;
     }
 }

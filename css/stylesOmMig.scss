@@ -1,0 +1,134 @@
+
+
+section.landingImage{
+  height: 85vh;
+  background-image: url("../img/omMigLanding-mob.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -2;
+
+  > div{
+    font-size: 40px;
+    line-height: normal;
+    bottom: 40px;
+    left: 30px;
+
+    > p:nth-of-type(1){
+      line-height: 38px;
+    }
+  }
+}
+
+div.transparentLanding{
+  height: 85vh;
+}
+
+section.info{
+  > .textContainer{
+    padding: 80px 32px;
+    background-color: #F8F8F9;
+    font-size: 14px;
+    color: #2A3344;
+
+    > p{
+
+      > a{
+        color: #00A8E6;
+        text-decoration: underline;
+
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  > .infoPicture{
+    height: 110vw;
+    background-image: url("../img/omMigKamera-mob.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+//For at give footer baggrundsfarve, så fixed billede ikke bliver vist nede på footer
+footer{
+  background-color: white;
+}
+
+
+@media screen and (min-width: 768px){
+  section.landingImage{
+    height: 80vh;
+    background-image: url("../img/omMigLanding.jpg");
+
+    > div{
+      font-size: 90px;
+      bottom: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      > p:nth-of-type(1){
+        line-height: normal;
+      }
+    }
+  }
+
+  div.transparentLanding{
+    height: 80vh;
+  }
+
+  section.info{
+    > .textContainer{
+      padding: 100px 40px;
+      font-size: 16px;
+    }
+
+    > .infoPicture{
+      height: auto;
+      background-image: url("../img/omMigKamera.jpg");
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  section.landingImage{
+    height: 100vh;
+
+    > div{
+      font-size: 130px;
+    }
+  }
+
+  div.transparentLanding{
+    height: 100vh;
+  }
+
+  section.info{
+    > .textContainer{
+      padding: 150px 75px;
+      font-size: 24px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

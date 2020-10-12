@@ -471,7 +471,7 @@ include 'footer.php';
 
         setTimeout(function () {
             loopTop();
-            setInterval(loopTop, 14000);
+            // setInterval(loopTop, 14000);
         }, 500);
     });
 

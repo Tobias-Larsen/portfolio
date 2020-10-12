@@ -31,6 +31,8 @@ a{
 
 .button-bg-sky:hover{
     opacity: 0.8;
+    color: white;
+    transition: none;
 }
 
 .hide{
@@ -44,6 +46,10 @@ a{
 
 .notClickable{
     pointer-events: none;
+}
+
+.clickable{
+    cursor: pointer;
 }
 
 
